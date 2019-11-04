@@ -23,7 +23,7 @@ const runSequence = require('run-sequence');
     gulp.task('processJS', () => {
       return gulp.src('*.js')
     .pipe(jshint({
-      esversion: 8
+      esversion: 6
     }))
     .pipe(jshint.reporter('default'))
     .pipe(babel({
